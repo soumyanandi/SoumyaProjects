@@ -8,7 +8,6 @@ sap.ui.define([
 		 *@memberOf com.sap.soumyaSentimentAnalysisYaas.controller.sayaas
 		 */
 		onInit: function() {
-			// this.byId("idSentimentEntityTable").setVisible(false);
 			this.byId("idTable").setVisible(false);
 			console.log("Sentiment and Entity tables are disabled initially from the screen");
 		},
