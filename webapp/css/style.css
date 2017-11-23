@@ -1,0 +1,28 @@
+/* Enter your custom styles here */
+
+.sapMBtnInner {
+    vertical-align: top;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    /*font-size: 0.875rem;*/
+    height: 2.500rem;
+    min-width: 2.500rem;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    text-align: center;
+    position: relative;
+    background-color: #f7f7f7;
+    border: 1px solid #ababab;
+    border-radius: 0.2rem;
+    color: #346187;
+    text-shadow: 0 0 0.125rem #ffffff;
+    margin-right: 20px;
+}

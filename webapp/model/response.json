@@ -1,0 +1,8 @@
+{
+	"oUrl" : "/YaasServices/hybris/oauth2/v1/token",
+	"authBody" : "grant_type=client_credentials&client_id=xC5BXu66nxdjyw5IVouh2RdgikzADhTm&client_secret=t6N8nhNwMDxeyFRz",
+	
+	"sUrl" : "/YaasServices/sap/ta-sentiments/v1",
+	
+	"eUrl" : "/YaasServices/sap/ta-entities/v1/"
+}

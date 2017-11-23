@@ -1,0 +1,148 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.sap.soumyaSentimentAnalysisYaas.controller.sayaas" xmlns:table="sap.ui.table" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<VBox width="100%" direction="Column" id="__vbox0">
+						<items>
+							<Input width="100%" id="idinputfield" fieldWidth="100%" placeholder="Please provide the input here"/>
+							<HBox width="100%" direction="Row" id="__hbox0">
+							<Button text="Analyze" width="200px" id="idbuttonanalyze" press="onPressAnalyze"/>
+							<Button text="Extract" width="200px" id="idbuttonextract" press="onPressExtract"/>
+							</HBox>
+						</items>
+					</VBox>
+					<VBox width="100%" direction="Column" alignItems="Center">
+						
+						<!--*****************Using sap.ui.Table*******************-->
+						
+						<!--<table:Table id="idTable" rows="{/entities}">-->
+						<!--	<table:title>-->
+						<!--		<Text text="{/tablelabel}"></Text>-->
+						<!--	</table:title>-->
+						<!--	<table:columns>-->
+						<!--		<table:Column sortProperty="id" filterProperty="id">-->
+						<!--			<Label text="Id"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{id}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--		<table:Column sortProperty="label" filterProperty="label">-->
+						<!--			<Label text="Label"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{label}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--		<table:Column sortProperty="labelPath" filterProperty="labelPath">-->
+						<!--			<Label text="Label Path"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{labelPath}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--		<table:Column sortProperty="normalizedForm" filterProperty="normalizedForm">-->
+						<!--			<Label text="Normalized Form"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{normalizedForm}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--		<table:Column sortProperty="offset" filterProperty="offset">-->
+						<!--			<Label text="Offset"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{offset}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--		<table:Column sortProperty="paragraph" filterProperty="paragraph">-->
+						<!--			<Label text="Paragraph"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{paragraph}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--		<table:Column sortProperty="sentence" filterProperty="sentence">-->
+						<!--			<Label text="Sentence"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{sentence}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--		<table:Column sortProperty="text" filterProperty="text">-->
+						<!--			<Label text="Text"/>-->
+						<!--			<table:template>-->
+						<!--				<Text text="{text}"></Text>-->
+						<!--			</table:template>-->
+						<!--		</table:Column>-->
+						<!--	</table:columns>-->
+						<!--</table:Table>-->
+						
+						<!--*****************Using sap.m.Table*******************-->
+						
+						<Table id="idTable" items="{/entities}">
+							<headerToolbar>
+								<Toolbar>
+									<content>
+										<Label text="{/tablelabel}"></Label>
+									</content>
+								</Toolbar>
+							</headerToolbar>
+							<items>
+								<ColumnListItem id="idDefaultItem">
+									<cells>
+										<Text text="{id}"/>
+										<Text text="{label}"/>
+										<Text text="{labelPath}"/>
+										<Text text="{normalizedForm}"/>
+										<Text text="{offset}"/>
+										<Text text="{paragraph}"/>
+										<Text text="{sentence}"/>
+										<Text text="{text}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+							<columns>
+								<Column>
+									<header>
+										<Text text="Id"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Text text="Label"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Text text="Label Path"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Text text="Normalized Form"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Text text="Offset"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Text text="Paragraph"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Text text="Sentence"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Text text="Text"/>
+									</header>
+								</Column>
+							</columns>
+						</Table>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
