@@ -16,7 +16,11 @@
         "runnerId": "webapprunner",
         "id": 6708124,
         "displayName": "Run index.html",
+<<<<<<< HEAD
         "lastRunTimeStamp": 1511847393298
+=======
+        "lastRunTimeStamp": 1511432332853
+>>>>>>> branch 'master' of https://github.com/soumyanandi/SoumyaProjects.git
       }
     }
   ]
