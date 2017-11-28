@@ -1,12 +1,10 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-	controllerName="com.sap.soumyaSentimentAnalysisYaas.controller.sayaas" xmlns:table="sap.ui.table" displayBlock="true">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:table="sap.ui.table" controllerName="com.sap.soumyaSentimentAnalysisYaas.controller.sayaas" displayBlock="true">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
 					<VBox width="100%" direction="Column" id="__vbox0">
-						<items>
-							<Input width="100%" id="idinputfield" fieldWidth="100%" placeholder="Please provide the input here"/>
+						<items><TextArea id="idtextarea" rows="10" cols="70" placeholder="Enter the details that you want to analyze"/>
 							<HBox width="100%" direction="Row" id="__hbox0">
 							<Button text="Analyze" width="200px" id="idbuttonanalyze" press="onPressAnalyze"/>
 							<Button text="Extract" width="200px" id="idbuttonextract" press="onPressExtract"/>
@@ -79,7 +77,7 @@
 							<headerToolbar>
 								<Toolbar>
 									<content>
-										<Label text="{/tablelabel}"></Label>
+										<Label text="{/tablelabel}"/>
 									</content>
 								</Toolbar>
 							</headerToolbar>

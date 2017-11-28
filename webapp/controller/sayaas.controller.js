@@ -8,7 +8,6 @@ sap.ui.define([
 		 *@memberOf com.sap.soumyaSentimentAnalysisYaas.controller.sayaas
 		 */
 		onInit: function() {
-			// this.byId("idSentimentEntityTable").setVisible(false);
 			this.byId("idTable").setVisible(false);
 			console.log("Sentiment and Entity tables are disabled initially from the screen");
 		},
@@ -24,7 +23,7 @@ sap.ui.define([
 			var view = this.getView();
 			var method = "onPressAnalyze";
 
-			var input = view.byId("idinputfield").getValue();
+			var input = view.byId("idtextarea").getValue();
 			console.log("Value recieved from the input field: " + input);
 
 			if (input !== "" || input !== null) {
@@ -45,7 +44,7 @@ sap.ui.define([
 			var view = this.getView();
 			var method = "onPressExtract";
 
-			var input = view.byId("idinputfield").getValue();
+			var input = view.byId("idtextarea").getValue();
 			console.log("Value recieved from the input field: " + input);
 
 			if (input !== "" || input !== null) {
